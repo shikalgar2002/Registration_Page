@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 32px;
+}
+
+/* Form styles */
+form {
+        background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 630px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Select styles */
+select {
+    background-color: #f9f9f9;
+}
+
+/* Button styles */
+input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ab7;
+}
+
+/* Input focus styles */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Placeholder styles */
+input::placeholder {
+    color: #888;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
